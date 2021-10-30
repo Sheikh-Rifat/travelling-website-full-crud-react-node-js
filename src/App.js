@@ -11,6 +11,8 @@ import AllServices from "./components/Main/Services/AllServices";
 import NotFound from "./components/NotFound/NotFound";
 import ServiceDetails from "./components/Private/ServiceDetails/ServiceDetails";
 import AuthProvider from "./Context/AuthProvider";
+import UserBookings from "./components/Private/UserBookings/UserBookings";
+import ManageBookings from "./components/Private/ManageBookings/ManageBookings";
 
 function App() {
   return (
@@ -33,6 +35,12 @@ function App() {
             </Route>
             <PrivateRoute path="/serviceDetails/:id">
               <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
+            <PrivateRoute path="/userBookings">
+              <UserBookings></UserBookings>
+            </PrivateRoute>
+            <PrivateRoute path="/manageBookings">
+              <ManageBookings></ManageBookings>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
