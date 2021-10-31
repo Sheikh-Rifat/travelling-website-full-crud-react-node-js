@@ -4,6 +4,7 @@ import useFirebase from "../../../hooks/useFirebase";
 import { ToastContainer, toast } from "react-toastify";
 
 const UserBookings = () => {
+  document.title = "Bookings";
   const { user } = useFirebase();
   const [bookings, setBookings] = useState([]);
   const [deleteBooking, setDeleteBookings] = useState(false);

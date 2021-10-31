@@ -104,7 +104,11 @@ const ServiceDetails = () => {
                     />
                     {errors.checkIn && <span>This field is required</span>}
 
-                    <input type="submit" value="Confirm Booking" />
+                    <input
+                      className="project-btn"
+                      type="submit"
+                      value="Confirm Booking"
+                    />
                     <ToastContainer />
                   </form>
                 </div>

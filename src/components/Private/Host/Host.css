@@ -1,0 +1,8 @@
+.host input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
+.host textarea {
+  padding: 10px 28px;
+}

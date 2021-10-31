@@ -16,7 +16,7 @@ const SingleService = ({ service }) => {
               <Card.Text>${price}/night</Card.Text>
             </div>
             <NavLink to={`/serviceDetails/${_id}`}>
-              <Button className="mt-3">View details</Button>
+              <Button className="mt-3 project-btn">View details</Button>
             </NavLink>
           </Card.Body>
         </Card>

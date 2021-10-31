@@ -6,6 +6,7 @@ import useAuth from "../../../hooks/useAuth";
 import { useHistory, useLocation } from "react-router";
 
 const LogIn = () => {
+  document.title = "Log In";
   const { signInUsingGoogle, setUser, setIsLoading } = useAuth();
 
   const location = useLocation();

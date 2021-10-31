@@ -1,1 +1,8 @@
+.profile {
+  border-radius: 50%;
+  height: 20%;
+}
 
+.custom-login {
+  color: #fe5a5f !important;
+}

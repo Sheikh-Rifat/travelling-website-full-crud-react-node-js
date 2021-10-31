@@ -3,6 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import SingleService from "../SingleService/SingleService";
 
 const AllServices = () => {
+  document.title = "All Services";
   const [allServices, setAllServices] = useState([]);
 
   useEffect(() => {

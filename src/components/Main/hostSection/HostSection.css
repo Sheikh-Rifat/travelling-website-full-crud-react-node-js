@@ -1,0 +1,10 @@
+.hosting-section {
+  background-image: url("../../../images/hostBanner.jpg");
+  padding: 15% 15% 15% 5%;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hosting-section p {
+  padding-right: 50%;
+}

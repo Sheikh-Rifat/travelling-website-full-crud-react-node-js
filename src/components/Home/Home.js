@@ -1,14 +1,19 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+
 import Banner from "../Header/Banner/Banner";
-import MenuHeader from "../Header/MenuHeader/MenuHeader";
+
+import AppSection from "../Main/AppSection/AppSection";
+import HostSection from "../Main/hostSection/HostSection";
 import Services from "../Main/Services/Services";
 
 const Home = () => {
+  document.title = "AirRnR";
   return (
-    <div>
+    <div id="home">
       <Banner></Banner>
       <Services></Services>
+      <HostSection></HostSection>
+      <AppSection></AppSection>
     </div>
   );
 };

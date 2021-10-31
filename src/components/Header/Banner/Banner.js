@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="banner-1">
       <h2>Not sure where to go? Perfect.</h2>
       <NavLink to="/allServices">
-        <Button>I'm flexible</Button>
+        <Button className="project-btn">I'm flexible</Button>
       </NavLink>
     </div>
   );

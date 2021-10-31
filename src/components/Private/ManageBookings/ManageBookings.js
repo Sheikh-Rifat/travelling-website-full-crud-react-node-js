@@ -4,6 +4,7 @@ import useFirebase from "../../../hooks/useFirebase";
 import { ToastContainer, toast } from "react-toastify";
 
 const ManageBookings = () => {
+  document.title = "Manage Bookings";
   const { user } = useFirebase();
   const [users, setUsers] = useState([]);
   const [singleUserUpdate, setSingleUserUpdate] = useState(false);
@@ -92,7 +93,10 @@ const ManageBookings = () => {
                   <td>{user.status}</td>
                   <td>
                     {user.status === "pending" ? (
-                      <Button onClick={() => handleApprove(user._id)}>
+                      <Button
+                        className="project-btn"
+                        onClick={() => handleApprove(user._id)}
+                      >
                         Approve
                       </Button>
                     ) : (

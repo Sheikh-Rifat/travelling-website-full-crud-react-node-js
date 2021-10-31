@@ -13,6 +13,7 @@ import ServiceDetails from "./components/Private/ServiceDetails/ServiceDetails";
 import AuthProvider from "./Context/AuthProvider";
 import UserBookings from "./components/Private/UserBookings/UserBookings";
 import ManageBookings from "./components/Private/ManageBookings/ManageBookings";
+import Host from "./components/Private/Host/Host";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/manageBookings">
               <ManageBookings></ManageBookings>
+            </PrivateRoute>
+            <PrivateRoute path="/host">
+              <Host></Host>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
