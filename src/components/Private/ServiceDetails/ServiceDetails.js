@@ -2,7 +2,7 @@ import React from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Form, Row } from "react-bootstrap";
 import { useParams } from "react-router";
 import useFirebase from "../../../hooks/useFirebase";
 import { useForm } from "react-hook-form";
@@ -15,7 +15,7 @@ const ServiceDetails = () => {
   let { id } = useParams();
   const [serviceDetail, setServiceDetail] = useState({});
   useEffect(() => {
-    const url = `http://localhost:4000/serviceDetails/${id}`;
+    const url = `https://chilling-barrow-54100.herokuapp.com/serviceDetails/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -25,7 +25,7 @@ const ServiceDetails = () => {
 
   // console.log(serviceDetail);
 
-  const name = user?.displayName;
+  // const name = user?.displayName;
   const {
     register,
     handleSubmit,
@@ -44,7 +44,7 @@ const ServiceDetails = () => {
     data.title = serviceDetail.title;
     data.status = "pending";
     console.log(data);
-    fetch("http://localhost:4000/usersBooking", {
+    fetch("https://chilling-barrow-54100.herokuapp.com/usersBooking", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

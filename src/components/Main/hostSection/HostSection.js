@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import "./HostSection.css";
 
 const HostSection = () => {
@@ -10,7 +11,9 @@ const HostSection = () => {
         <p>
           Earn extra income and unlock new opportunities by sharing your space.
         </p>
-        <Button className="project-btn">Learn More</Button>
+        <NavLink to="/host">
+          <Button className="project-btn">Learn More</Button>
+        </NavLink>
       </div>
     </Container>
   );

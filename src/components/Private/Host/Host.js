@@ -15,7 +15,7 @@ const Host = () => {
 
   const onSubmit = (data) => {
     // console.log(data);
-    fetch("http://localhost:4000/host", {
+    fetch("https://chilling-barrow-54100.herokuapp.com/host", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

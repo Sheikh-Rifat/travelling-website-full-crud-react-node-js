@@ -9,7 +9,7 @@ const ManageBookings = () => {
   const [users, setUsers] = useState([]);
   const [singleUserUpdate, setSingleUserUpdate] = useState(false);
   useEffect(() => {
-    fetch("http://localhost:4000/usersBooking")
+    fetch("https://chilling-barrow-54100.herokuapp.com/usersBooking")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);
@@ -19,7 +19,7 @@ const ManageBookings = () => {
   const handleApprove = (id) => {
     const status = { status: "approved" };
     // console.log(id);
-    const url = `http://localhost:4000/manageUsers/${id}`;
+    const url = `https://chilling-barrow-54100.herokuapp.com/manageUsers/${id}`;
     // console.log(url);
     fetch(url, {
       method: "PUT",
@@ -38,7 +38,7 @@ const ManageBookings = () => {
   const hanldeCancelApprove = (id) => {
     const status = { status: "pending" };
     // console.log(id);
-    const url = `http://localhost:4000/manageUsers/${id}`;
+    const url = `https://chilling-barrow-54100.herokuapp.com/manageUsers/${id}`;
     // console.log(url);
     fetch(url, {
       method: "PUT",

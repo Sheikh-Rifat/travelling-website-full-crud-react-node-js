@@ -10,7 +10,7 @@ import "./MenuHeader.css";
 
 const MenuHeader = () => {
   const { user, logOut } = useAuth();
-  console.log(user);
+  // console.log(user);
   return (
     <div>
       <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">

@@ -9,7 +9,7 @@ const UserBookings = () => {
   const [bookings, setBookings] = useState([]);
   const [deleteBooking, setDeleteBookings] = useState(false);
   useEffect(() => {
-    fetch("http://localhost:4000/usersBooking")
+    fetch("https://chilling-barrow-54100.herokuapp.com/usersBooking")
       .then((res) => res.json())
       .then((data) => {
         //console.log(data)
@@ -20,7 +20,7 @@ const UserBookings = () => {
   const handleCancel = (id) => {
     // console.log(id);
 
-    fetch(`http://localhost:4000/usersBooking/${id}`, {
+    fetch(`https://chilling-barrow-54100.herokuapp.com/usersBooking/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

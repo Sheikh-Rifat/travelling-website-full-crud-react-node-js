@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Button, Container, Row, Spinner } from "react-bootstrap";
+import { Button, Container, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import SingleService from "../SingleService/SingleService";
 
@@ -9,7 +9,7 @@ const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/services")
+    fetch("https://chilling-barrow-54100.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
