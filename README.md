@@ -1,8 +1,8 @@
 # https://airrnr-a-11.web.app/
 
-## Available Scripts
+## Short Description
 
-This is the project website for Assignment-11, which is related about tourism website. It is a website about renting Resorts and hosting resorts at the same website. People can log in with their website and view the luxurious resorts for their vacation to spend in.
+This is the project website for tour enthusiasts, which is related about tourism website. It is a website about renting Resorts and hosting resorts at the same website. People can log in with their website and view the luxurious resorts for their vacation to spend in.
 
 ## Required works
 
